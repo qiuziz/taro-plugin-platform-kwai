@@ -42,7 +42,7 @@ export default class Kwai extends TaroPlatformBase {
    */
   modifyTemplate () {
     const template = this.template
-    template.mergeComponents(this.ctx, components)
+    template.mergeComponents(this.ctx, components as any)
     this.modifyInput(template.internalComponents.Input)
   }
 
