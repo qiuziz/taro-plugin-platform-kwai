@@ -12,7 +12,8 @@ export default class Kwai extends TaroPlatformBase {
     templ: '.ksml',
     style: '.css',
     config: '.json',
-    script: '.js'
+    script: '.js',
+    xs: '.ks',
   }
 
   template = new Template()
@@ -42,7 +43,7 @@ export default class Kwai extends TaroPlatformBase {
    */
   modifyTemplate () {
     const template = this.template
-    template.mergeComponents(this.ctx, components)
+    template.mergeComponents(this.ctx, components as any)
     this.modifyInput(template.internalComponents.Input)
   }
 

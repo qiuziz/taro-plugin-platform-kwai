@@ -1,4 +1,4 @@
-import { singleQuote } from '@tarojs/shared';
+import { singleQuote } from '@tarojs/shared'
 
 const _true = 'true';
 const _false = 'false';
@@ -12,7 +12,7 @@ export const components = {
     bindContact: '',
     bindError: '',
     bindOpenSetting: '',
-    bindLaunchApp: ''
+    bindLaunchApp: '',
   },
   Slider: {
     color: singleQuote('#e9e9e9'),
@@ -22,12 +22,12 @@ export const components = {
     type: ''
   },
   Swiper: {
-    'easing-function': singleQuote('default')
+    'easing-function': singleQuote('default'),
   },
   RichText: {
     space: ''
-  },
-  Textarea: {
+	},
+	Textarea: {
     name: _empty,
     value: _empty,
     maxlength: 140,
@@ -44,4 +44,4 @@ export const components = {
     'confirm-hold': _false,
     bindKeyboardHeightChange: _empty
   }
-};
+}
